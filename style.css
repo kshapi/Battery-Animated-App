@@ -1,0 +1,80 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+body {
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.main {
+   height: 380px;
+   width: 310px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   background: linear-gradient(#9BD8CB, #9D7EE0);
+   border-radius: 10px;
+   position: relative;
+   
+}
+.main .anim {
+   height: 217px;
+   width: 110px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   transform: rotate(90deg);
+}
+.anim .top {
+   height: 20px;
+   width: 50px;
+   background: #fff;
+   border-top-right-radius: 10px;
+   border-top-left-radius: 10px;
+}
+.anim .bottom {
+   height: 200px;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   flex-direction: column;
+   gap: 3px 0px;
+   border: 3px solid #fff;
+   border-radius: 10px;
+   padding: 3px;
+}
+.bottom span { 
+   display: inline-block;
+   height: 18.7%;
+   width: 100%;
+   background: #fff;
+   border-radius: 5px;
+}
+.charger {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   position: relative;
+   top: -40px;
+}
+.main .fa-usb {
+   transform: rotate(-90deg);
+   font-size: 25px;
+   position: relative;
+   top: 10px;
+   display: none;
+}
+.charging {
+   animation: charging 0.8s linear infinite alternate;
+}
+@keyframes charging {
+   0% {opacity: 0;}
+   100% {opacity: 1;}
+}
